@@ -9,10 +9,10 @@
         "experimentalDecorators": true,
         "sourceMap": true,
         "declaration": true,
-        "outDir": "dist/"
-    },
-    "paths": {
-        "@angular/core": ["./node_modules/@angular/core"],
+        "outDir": "dist/",
+        "paths": {
+            "@angular/core": ["./node_modules/@angular/core"],
+        },
     },
     "files": [
         "index.ts"
