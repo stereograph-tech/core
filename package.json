@@ -2,6 +2,7 @@
   "name": "@stereograph/core",
   "version": "0.0.33",
   "description": "Stereograph Core is an open-source collection of helpful libraries for JavaScript, particularly Angular 2.",
+  "author": "Danny Bullis",
   "license": "MIT",
   "scripts": {},
   "private": false,
