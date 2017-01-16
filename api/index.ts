@@ -22,7 +22,7 @@ export class Api {
       'Content-Type': 'application/json'
     };
     additionalHeaders = additionalHeaders || {};
-    const headers = new Headers(Object.assign(rawHeaders, additionalHeaders));
+    const headers = new Headers((<any>Object).assign(rawHeaders, additionalHeaders));
     const options = new RequestOptions({ headers: headers });
 
     // Send the HTTP get request
@@ -43,19 +43,10 @@ export class Api {
       'Content-Type': 'application/json'
     };
     additionalHeaders = additionalHeaders || {};
-    const headers = new Headers(Object.assign(rawHeaders, additionalHeaders));
+    const headers = new Headers((<any>Object).assign(rawHeaders, additionalHeaders));
     const options = new RequestOptions({ headers: headers });
 
     return this._http.post(requestUrl, body, options)
-      .map(this._extractData)
-      .catch(this._handleError)
-      .share();
-  }
-
-  public postFormData<T>(requestUrl: string, data: FormData, additionalHeaders?: any): Observable<T> {
-    const headers = new Headers(additionalHeaders);
-    const options = new RequestOptions({ headers: headers });
-    return this._http.post(requestUrl, (data || {}).toString(), options)
       .map(this._extractData)
       .catch(this._handleError)
       .share();

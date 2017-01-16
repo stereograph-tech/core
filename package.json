@@ -6,8 +6,6 @@
   "license": "MIT",
   "scripts": {},
   "private": false,
-  "main": "index.js",
-  "types": "index.d.ts",
   "homepage": "https://github.com/stereograph-tech/core.git#readme",
   "repository": {
     "type": "git",
