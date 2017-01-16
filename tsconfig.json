@@ -2,17 +2,14 @@
     "compilerOptions": {
         "baseUrl": ".",
         "noImplicitAny": false,
-        "module": "es2015",
+        "module": "es6",
         "moduleResolution": "node",
-        "target": "es5",
+        "target": "es6",
         "emitDecoratorMetadata": true,
         "experimentalDecorators": true,
         "sourceMap": true,
         "declaration": true,
-        "outDir": "dist/",
-        "paths": {
-            "@angular/core": ["./node_modules/@angular/core"]
-        }
+        "outDir": "dist/"
     },
     "files": [
         "index.ts"
