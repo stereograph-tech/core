@@ -17,7 +17,7 @@ export class Api {
   constructor(private _http: Http) {
   }
 
-  public get<T>(requestUrl: string, additionalHeaders?: any): Observable<T> {
+  protected get<T>(requestUrl: string, additionalHeaders?: any): Observable<T> {
     const rawHeaders = {
       'Content-Type': 'application/json'
     };
@@ -37,7 +37,7 @@ export class Api {
    * @param url
    * @param data
    */
-  public post<T>(requestUrl: string, data: any, additionalHeaders?: any): Observable<T> {
+  protected post<T>(requestUrl: string, data: any, additionalHeaders?: any): Observable<T> {
     const body = JSON.stringify(data);
     const rawHeaders = {
       'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ export class Api {
       .share();
   }
 
-  public postFormData<T>(requestUrl: string, data: FormData, additionalHeaders?: any): Observable<T> {
+  protected postFormData<T>(requestUrl: string, data: FormData, additionalHeaders?: any): Observable<T> {
     const headers = new Headers(additionalHeaders);
     const options = new RequestOptions({ headers: headers });
     return this._http.post(requestUrl, (data || {}).toString(), options)
