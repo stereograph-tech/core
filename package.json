@@ -5,13 +5,13 @@
   "license": "MIT",
   "scripts": {},
   "private": false,
-  "homepage": "https://github.com/theBull/stereograph-core.git#readme",
+  "homepage": "https://github.com/stereograph-tech/core.git#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theBull/stereograph-core.git"
+    "url": "git+https://github.com/stereograph-tech/core.git"
   },
   "bugs": {
-    "url": "https://github.com/theBull/stereograph-core/issues",
+    "url": "https://github.com/stereograph-tech/core/issues",
     "email": "danny@stereograph.tech"
   },
   "dependencies": {
