@@ -1,0 +1,36 @@
+{
+  "name": "@stereograph/core",
+  "version": "0.0.32",
+  "description": "Stereograph Core is an open-source collection of helpful libraries for JavaScript, particularly Angular 2.",
+  "license": "MIT",
+  "scripts": {},
+  "private": false,
+  "homepage": "https://github.com/theBull/stereograph-core.git#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/theBull/stereograph-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/theBull/stereograph-core/issues",
+    "email": "danny@stereograph.tech"
+  },
+  "dependencies": {
+    "@angular/common": "^2.3.1",
+    "@angular/compiler": "^2.3.1",
+    "@angular/core": "^2.3.1",
+    "@angular/http": "^2.3.1",
+    "@angular/platform-browser": "^2.3.1",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.0.1",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.7.2"
+  },
+  "devDependencies": {
+    "@types/node": "^6.0.42",
+    "codelyzer": "~2.0.0-beta.1",
+    "ts-node": "1.2.1",
+    "tslint": "^4.3.0",
+    "typescript": "^2.0.10",
+    "typings": "^2.1.0"
+  }
+}
